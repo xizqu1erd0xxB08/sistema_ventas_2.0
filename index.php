@@ -15,6 +15,11 @@ switch ($controller){
         $ctrl->guardar();
         break;
     
+    case "sangre":
+        require_once 'controllers/SangreController.php';
+        $ctrl = new SangreController();
+        $ctrl->guardar();
+        break;  
     default:
         echo "Bienvenido al sistema MVC";
         break;

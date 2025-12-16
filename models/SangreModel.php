@@ -1,7 +1,7 @@
 <?php
 require_once "config/db.php";
 
-class SexoModel {
+class SangreModel {
     private $conn;
 
     public function __construct(){
@@ -9,8 +9,8 @@ class SexoModel {
         $this->conn = $db->connect();
     }
 
-    public function insertar($sexo){
-        $sql = "INSERT INTO sexo (tipo_sexo) VALUES ('$sexo')";
+    public function insertar($sangre){
+        $sql = "INSERT INTO sangre (tipo_sangre) VALUES ('$sangre')";
         return $this->conn->query($sql);
     }
 }
